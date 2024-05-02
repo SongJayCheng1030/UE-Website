@@ -151,7 +151,7 @@ export function leftDate(createdDate: number, duration: number){
   let minutes = Math.floor((diff % 3600)/60);
 
   if ( diff <= 0 ){ days = 0; hours = 0; minutes = 0; return `${days}h ${hours}d`;}
-  if (days == 0) { return `${hours}h ${minutes}m`; }
+  if (days === 0) { return `${hours}h ${minutes}m`; }
     else { return `${days}d ${hours}h`; }  
 }
 
